@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="./style/style.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/2d30b2ba60.js" crossorigin="anonymous"></script>
         
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <title>Jackson-Timoteo</title>
+        
+    <title>Jackson Timóteo</title>
 </head>
 
 <body>
@@ -19,33 +22,35 @@
             <nav class="menu">
                 <ul>
                     <li><a href="">Sobre</a></li>
-                    <li><a href="#">Portifólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-
-            <h1 class="name">Jackson Timóteo</h1>
-            <h4 class="name-obj">Front-End Jr.</h4>
+            
+            <div class="titulo">
+                <h1 class="name">Jackson Timóteo</h1>
+                <h4 class="name-obj">Front-End Jr.</h4>
+            </div>
 
         </header>
         
-        <section class="portifolio">
+        <section class="portfolio" id="portfolio">
             
-            <h4 class="port-title">Portifólio</h4>
+            <h4 class="port-title">Portfólio</h4>
             <div class="grid">
 
                 <figure> 
-                    <img src="./imagens/ec.jpg" alt="e-commerce">
+                    <img class="port-igm" src="./imagens/ec.jpg" alt="e-commerce">
                     <figcaption>E-Commerce</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="./imagens/mobile.jpg" alt="mobile">
+                    <img class="port-igm" src="./imagens/mobile.jpg" alt="mobile">
                     <figcaption>Mobile</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="./imagens/Web-designing.jpg" alt="projeto-pessoais">
+                    <img class="port-igm" src="./imagens/Web-designing.jpg" alt="projeto-pessoais">
                     <figcaption>Projetos Pessoais</figcaption>
                 </figure>
 
@@ -53,12 +58,29 @@
         </section>
         
            <footer class="rodape">
+        
             
-            <ul class="icones">
-                <li><a href="#" class="icon-link"><span class="visible"></span> <i class="fab fa-github"></i></a></li>
+            <div class="icones">
+               <p class="contato" id="contato">Contato:</p>
+                
+                
+                <a href="https://github.com/Jackson-Timoteo" class="icon-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
     
-                <li><a href="#" class="icon-link"><span class="visible"></span> <i class="fab fa-twitter"></i></a></li>
-            </ul>
+                <a href="" class="icon-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/jackson-tim%C3%B3teo-ba1885101/" class="icon-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/jacksonsiilvaa_/" class="icon-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+            </div>
 
         </footer>
     </main>

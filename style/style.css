@@ -33,22 +33,39 @@ header{
 
 .menu li{
     list-style: none;
-    padding: 10px;
+    padding: 30px;
     text-transform: uppercase;
     display: inline;
-    text-shadow: 5px 5px 7px #f5f5f5; 
-    color: white;
+    text-shadow: 1px 4px 9px #f5f5f5;
 }
 
 .menu a{
     color: white;
     text-decoration: none;
+    transition: 2s;
 }
 
 .menu a:hover{
-    color: #ccc;
+    color: aqua;
     text-decoration: underline; 
 }
+
+/*
+
+.titulo{
+    transform: scale(0.2) translateY(50vh);
+    animation: linear 2s  animationTitulo ;
+    opacity: 0;
+}
+
+@keyframes animationTitulo{
+    100%{
+        transform: scale(1) translateY(0);
+        opacity: 1;   
+    }
+}
+*/
+
 
 .name{
     color: white;
@@ -63,7 +80,7 @@ header{
     margin-left: 150px;
 }
 
-.portifolio{
+.portfolio{
     background-color: aqua;
     width: auto;
     height: auto;
@@ -75,50 +92,50 @@ header{
     font-size: 2em;
     padding: 10px;
 }
-/*
-.grid{
-    display: grid;
-    gap: 2em;
-}
 
-@media (min-width: 560px){
-    .portifolio, .grid{
-        grid-template-columns: 240px 240px;
-    }    
-}
 
-@media (min-width: 800){
-    .portifolio, .grid{
-        grid-template-columns: repeat(3, 240px);
-    }    
-}
- */
 figure{
     display: inline-block;
 }
-.portifolio img{
+
+.port-igm{
     height: 180px;
     width: 240px;
     object-fit:cover;
     object-position: bottom;
     border-radius: 10px;
-    position: ;
+    margin: 10px;
     box-sizing: border-box;
     cursor: pointer;
+    border: 2px solid blue;
+    transition: transform 500;
 }
 
+.port-igm:hover{
+    transform: scale(1.1);   
+}
 
 .icones{
     text-align: center;
-    margin-top: 10px;
+    margin: 0 ;
 }
 
-.icones li{
+.icones a{
     display: inline-block;
-    font-size: 25px;;
-    color: #4455;
+    font-size: 2em;
     padding: 10px;
-    
+    transition: 2s;
+}
+
+.icones a:hover{
+    color: aqua;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px aqua;
+    transform: scale(1.1);     
+}
+
+.contato{
+    color: white;
 }
 
 .icon-link{
