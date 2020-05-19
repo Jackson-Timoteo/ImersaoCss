@@ -12,6 +12,25 @@ body{
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos*/
 
+
+@media (min-width: 200px){
+    body{
+        font-size: 17px;
+    }
+
+
+@media (min-width: 250px){
+    body{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 300px){
+    body{
+        font-size: 15px;
+    }
+}
+
 @media (min-width: 400px){
     body{
         font-size: 14px;
@@ -19,21 +38,25 @@ body{
 }
 
 header{
-    background-image: url(../imagens/aac871552c4b14d4520882c651399ce42aaad9c0_hq.gif);
+    background-image: url(../imagens/coffe.jpg);
     height: 100vh;
-    background-position:  center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    overflow: auto;
 }
 
 .menu{
-    background-color: black;
     padding: 10px;
     text-align: right; 
+    background-color: black;
+    
 }
+    
 
 .menu li{
     list-style: none;
-    padding: 30px;
+    margin: 35px;
     text-transform: uppercase;
     display: inline;
     text-shadow: 1px 4px 9px #f5f5f5;
@@ -50,11 +73,9 @@ header{
     text-decoration: underline; 
 }
 
-/*
-
-.titulo{
-    transform: scale(0.2) translateY(50vh);
-    animation: linear 2s  animationTitulo ;
+.name-obj{
+    transform: scale(0.2) translateX(50vg);
+    animation: ease-in 5s  animationTitulo infinite;
     opacity: 0;
 }
 
@@ -64,24 +85,83 @@ header{
         opacity: 1;   
     }
 }
-*/
 
 
-.name{
+.titulo{
+    margin-top: 20px;
+    padding: 100px;
     color: white;
+}
+.name{
     font-size: 30px;
-    margin-top: 180px;
-    margin-left: 100px;
     text-shadow: 5px 5px 7px #b9b8b8;
 }
 
 .name-obj{
-    color: white;
-    margin-left: 150px;
+    margin-left: 36px;
 }
 
-.portfolio{
-    background-color: aqua;
+@media(min-width: 1200px){
+        .container{
+        max-height: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.sobre {
+    padding: 2em;
+    background-color: #d9d9d9;
+    height: 50vh;
+    margin-bottom: 10px;
+    overflow: auto;
+    background-size: cover;
+}
+
+.avatar{
+    float: right;
+}
+
+.avatar img{
+    width: 240px;
+    height: 180px;
+    object-position: bottom;
+    border-radius: 50% ;
+    background-size: cover;
+    margin-left: 2em;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    overflow: auto;
+}
+
+.sobre p{
+    
+    margin-bottom: 0.4em;
+    font-size: 2em;
+    font-family: monospace;
+    color: white;
+    margin-left: 10px;
+    font-family: vt323;
+    
+}
+
+.sobre a{
+    color: #e28e8e;
+}
+
+.sobre a:hover{
+    text-transform: uppercase;
+}
+
+.conteudo-sobre{
+    background-color: rgba(0, 0, 26, 255 );;
+    margin-left: 50px;
+    margin-right: 250px;
+    opacity: 0.5;
+}
+
+.projetos{
+    background-color: #d9d9d9;
     width: auto;
     height: auto;
     padding: 2em;
@@ -93,12 +173,12 @@ header{
     padding: 10px;
 }
 
-
 figure{
     display: inline-block;
 }
 
-.port-igm{
+
+.port-img{
     height: 180px;
     width: 240px;
     object-fit:cover;
@@ -107,12 +187,16 @@ figure{
     margin: 10px;
     box-sizing: border-box;
     cursor: pointer;
-    border: 2px solid blue;
+    border: 2px solid #5c5858;
     transition: transform 500;
 }
 
-.port-igm:hover{
+.port-img:hover{
     transform: scale(1.1);   
+}
+
+figcaption:hover{
+    text-transform: uppercase;
 }
 
 .icones{
@@ -120,24 +204,29 @@ figure{
     margin: 0 ;
 }
 
-.icones a{
+.icon-link{
     display: inline-block;
     font-size: 2em;
     padding: 10px;
     transition: 2s;
+    color: white;
 }
 
 .icones a:hover{
     color: aqua;
     text-decoration: none;
     text-shadow: 2px 2px 4px aqua;
-    transform: scale(1.1);     
+    transform: scale(1.4); 
 }
 
 .contato{
     color: white;
+    padding-top: 10px;
+    font-size: 1.7em;
+    transition: 0.1s;
 }
 
-.icon-link{
-    color: white;
+.contato:hover{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
