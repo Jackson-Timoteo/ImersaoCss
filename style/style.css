@@ -131,18 +131,31 @@ header{
     background-size: cover;
     margin-left: 2em;
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    overflow: auto;
+    margin: auto;
+}
+    
+@media(max-width: 300px){
+    .avatar img{
+        width: 200px ;
+        height: 150px;
+  
+    }
+}    
+@media(max-width: 290px){
+    .avatar img{
+        width: 200px ;
+        height: 150px;
+  
+    }
 }
 
 .sobre p{
-    
     margin-bottom: 0.4em;
     font-size: 2em;
     font-family: monospace;
     color: white;
     margin-left: 10px;
     font-family: vt323;
-    
 }
 
 .sobre a{
@@ -154,10 +167,10 @@ header{
 }
 
 .conteudo-sobre{
-    background-color: rgba(0, 0, 26, 255 );;
-    margin-left: 50px;
-    margin-right: 250px;
+    background-color: rgba(0, 0, 26, 255 );
     opacity: 0.5;
+    margin: auto;
+    padding: 26px;
 }
 
 .projetos{
