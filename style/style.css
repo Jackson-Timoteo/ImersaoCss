@@ -113,9 +113,9 @@ header{
 .sobre {
     padding: 2em;
     background-color: #d9d9d9;
-    height: 50vh;
-    margin-bottom: 10px;
+    height: 50%;
     overflow: auto;
+    margin-bottom: 10px;
     background-size: cover;
 }
 
@@ -127,7 +127,7 @@ header{
     width: 240px;
     height: 180px;
     object-position: bottom;
-    border-radius: 50% ;
+    border-radius: 50%;
     background-size: cover;
     margin-left: 2em;
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -170,7 +170,7 @@ header{
     background-color: rgba(0, 0, 26, 255 );
     opacity: 0.5;
     margin: auto;
-    padding: 26px;
+    padding: 35px;
 }
 
 .projetos{
